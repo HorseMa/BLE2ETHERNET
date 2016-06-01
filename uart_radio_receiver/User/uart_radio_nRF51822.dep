@@ -1,0 +1,87 @@
+Dependencies for Project 'uart_radio', Target 'nRF51822': (DO NOT MODIFY !)
+F (..\Application\main.c)(0x56A9BF70)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf.h)(0x56A99A18)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\components\drivers_nrf\hal\nrf51_deprecated.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\compiler_abstraction.h)(0x5475B14A)
+I (..\components\drivers_nrf\radio_config\radio_config.h)(0x56A9AD0A)
+I (..\components\drivers_nrf\hal\nrf_gpio.h)(0x5475B142)
+I (..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h)(0x5475B142)
+I (..\components\drivers_nrf\hal\nrf_delay.h)(0x5475B142)
+I (..\Application\bps.h)(0x56A9BD00)
+I (..\components\drivers_nrf\simple_uart\simple_uart.h)(0x5475B142)
+F (..\Application\bps.c)(0x56A9B86E)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\bps.o --omf_browse .\_build\bps.crf --depend .\_build\bps.d)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf_gpio.h)(0x5475B142)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\Application\bps.h)(0x56A9BD00)
+F (..\Device\system_nrf51.c)(0x5475B14A)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf.h)(0x56A99A18)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\components\drivers_nrf\hal\nrf51_deprecated.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\compiler_abstraction.h)(0x5475B14A)
+I (..\Device\system_nrf51.h)(0x5475B14A)
+F (..\Device\arm_startup_nrf51.s)(0x5475B14A)(--cpu Cortex-M0 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include--pd "NRF51 SETA 1"--list .\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
+F (..\components\drivers_nrf\radio_config\radio_config.c)(0x56A9AD08)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\radio_config.o --omf_browse .\_build\radio_config.crf --depend .\_build\radio_config.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf_gpio.h)(0x5475B142)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\components\drivers_nrf\radio_config\radio_config.h)(0x56A9AD0A)
+I (..\components\drivers_nrf\hal\nrf_delay.h)(0x5475B142)
+I (..\components\drivers_nrf\hal\nrf.h)(0x56A99A18)
+I (..\components\drivers_nrf\hal\nrf51_deprecated.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\compiler_abstraction.h)(0x5475B14A)
+F (..\components\drivers_nrf\hal\nrf_delay.c)(0x5475B142)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\nrf_delay.o --omf_browse .\_build\nrf_delay.crf --depend .\_build\nrf_delay.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\compiler_abstraction.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\nrf.h)(0x56A99A18)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\components\drivers_nrf\hal\nrf51_deprecated.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\nrf_delay.h)(0x5475B142)
+F (..\components\drivers_nrf\simple_uart\simple_uart.c)(0x56A9BB66)(-c --cpu Cortex-M0 -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\simple_uart.o --omf_browse .\_build\simple_uart.crf --depend .\_build\simple_uart.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf.h)(0x56A99A18)
+I (..\components\drivers_nrf\hal\nrf51.h)(0x5475B146)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532BF7C2)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532BF7C2)
+I (C:\Keil\ARM\Device\Nordic\nRF51822\Include\system_nrf51.h)(0x53214F9E)
+I (..\components\drivers_nrf\hal\nrf51_bitfields.h)(0x5475B148)
+I (..\components\drivers_nrf\hal\nrf51_deprecated.h)(0x5475B14A)
+I (..\components\drivers_nrf\hal\compiler_abstraction.h)(0x5475B14A)
+I (..\components\drivers_nrf\simple_uart\simple_uart.h)(0x5475B142)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
+I (..\components\drivers_nrf\hal\nrf_delay.h)(0x5475B142)
+I (..\components\drivers_nrf\hal\nrf_gpio.h)(0x5475B142)
