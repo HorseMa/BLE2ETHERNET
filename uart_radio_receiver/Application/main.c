@@ -31,6 +31,7 @@
 #include "bps.h"
 #include "simple_uart.h"
 #include <RTL.h>                      /* RTX kernel functions & defines      */
+#include "tasks.h"
 
 static uint32_t                   packet;              /**< Packet to transmit. */
 
@@ -82,7 +83,9 @@ void tx_packet(void)
  *        Task 1 'init': Initialize
  *---------------------------------------------------------------------------*/
 __task void init (void) {
-  os_tsk_delete_self ();               /* stop init task (no longer needed)  */
+		t_net_init   = os_tsk_create (net_init,  0); /* start clock task                 */
+
+		os_tsk_delete_self ();               /* stop init task (no longer needed)  */
 }
 
 /**

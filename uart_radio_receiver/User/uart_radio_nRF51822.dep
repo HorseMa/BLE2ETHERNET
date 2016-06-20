@@ -1,5 +1,5 @@
 Dependencies for Project 'uart_radio', Target 'nRF51822': (DO NOT MODIFY !)
-F (..\Application\main.c)(0x5767674B)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+F (..\Application\main.c)(0x5767751F)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7C554)
@@ -19,6 +19,7 @@ I (..\components\drivers_nrf\hal\nrf_delay.h)(0x57676649)
 I (..\Application\bps.h)(0x57676649)
 I (..\components\drivers_nrf\simple_uart\simple_uart.h)(0x57676649)
 I (C:\Keil\ARM\RV31\INC\RTL.h)(0x532BF308)
+I (..\Application\tasks.h)(0x576784AE)
 F (..\Application\bps.c)(0x57676649)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\bps.o --omf_browse .\_build\bps.crf --depend .\_build\bps.d)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
@@ -36,6 +37,12 @@ I (C:\Keil\ARM\RV31\INC\RTX_lib.c)(0x532BF308)
 F (..\Application\RTX_Conf_CM.c)(0x532BF7C2)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\rtx_conf_cm.o --omf_browse .\_build\rtx_conf_cm.crf --depend .\_build\rtx_conf_cm.d)
 I (C:\Keil\ARM\RV31\INC\RTL.h)(0x532BF308)
 I (C:\Keil\ARM\RV31\INC\RTX_lib.c)(0x532BF308)
+F (..\Application\tasks.c)(0x576784AE)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\tasks.o --omf_browse .\_build\tasks.crf --depend .\_build\tasks.d)
+I (C:\Keil\ARM\RV31\INC\RTL.h)(0x532BF308)
+F (..\Application\device.c)(0x52CB9434)()
+F (..\Application\dhcp.c)(0x52C22A26)()
+F (..\Application\dns.c)(0x4F1621D0)()
+F (..\Application\sockutil.c)(0x52B1644C)()
 F (..\Device\system_nrf51.c)(0x57676649)(-c --cpu Cortex-M0 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\components\drivers_nrf\radio_config -I..\components\drivers_nrf\hal -I..\components\drivers_nrf\nrf_soc_nosd -I..\components\drivers_nrf\simple_uart --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51-o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
 I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7C554)
