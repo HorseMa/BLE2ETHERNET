@@ -355,8 +355,8 @@ ARM Macro Assembler    Page 6
 Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=.\_build
 \arm_startup_nrf51.d -o.\_build\arm_startup_nrf51.o -IC:\Keil\ARM\RV31\INC -IC:
 \Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Device\Nordic\nRF51822\Include --predefin
-e="__EVAL SETA 1" --predefine="NRF51 SETA 1" --list=.\arm_startup_nrf51.lst ..\
-Device\arm_startup_nrf51.s
+e="__RTX SETA 1" --predefine="__EVAL SETA 1" --predefine="NRF51 SETA 1" --list=
+.\arm_startup_nrf51.lst ..\Device\arm_startup_nrf51.s
 
 
 
@@ -890,4 +890,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-393 symbols in table
+394 symbols in table

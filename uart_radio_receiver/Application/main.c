@@ -30,6 +30,8 @@
 #include "nrf_delay.h"
 #include "bps.h"
 #include "simple_uart.h"
+#include <RTL.h>                      /* RTX kernel functions & defines      */
+
 static uint32_t                   packet;              /**< Packet to transmit. */
 
 
@@ -76,12 +78,21 @@ void tx_packet(void)
 	nrf_gpio_pin_toggle(LED_2);
 }
 
+/*----------------------------------------------------------------------------
+ *        Task 1 'init': Initialize
+ *---------------------------------------------------------------------------*/
+__task void init (void) {
+  os_tsk_delete_self ();               /* stop init task (no longer needed)  */
+}
+
 /**
  * @brief Function for application main entry.
  * @return 0. int return type required by ANSI/ISO standard.
  */
 int main(void)
 {
+	  os_sys_init (init);                 /* init and start with task 'INIT'     */
+#if 0
     clock_initialization();
     radio_configure();
 	gipo_init();
@@ -105,6 +116,7 @@ int main(void)
 			}
 		}
     }
+		#endif
 }
 
 /**
