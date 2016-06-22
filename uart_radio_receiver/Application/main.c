@@ -69,14 +69,14 @@ void tx_packet(void)
 	while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0);/* Wait for the external oscillator to start up */
 	app_tx_data();
 	nrf_delay_ms(500);
-	nrf_gpio_pin_toggle(LED_1);
+	//nrf_gpio_pin_toggle(LED_1);
 	
 	packet = 0x00;
 	NRF_RADIO->PACKETPTR = (uint32_t)&packet; // Set payload pointer	
 	while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0);/* Wait for the external oscillator to start up */
 	app_tx_data();
 	nrf_delay_ms(500);
-	nrf_gpio_pin_toggle(LED_2);
+	//nrf_gpio_pin_toggle(LED_2);
 }
 
 /*----------------------------------------------------------------------------

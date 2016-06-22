@@ -27,6 +27,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
+#define SPI_MASTER_0_ENABLE
 
 #define SPI_PIN_DISCONNECTED 0xFFFFFFFF /**< A value used to the PIN deinitialization. */
 #define SPI_DEFAULT_TX_BYTE  0x00       /**< Default byte (used to clock transmission
