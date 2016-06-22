@@ -9,6 +9,11 @@ void gipo_init(void)
 	nrf_gpio_pin_set(W5500_CS);
 	nrf_gpio_cfg_output(W5500_RST);
 	nrf_gpio_pin_set(W5500_RST);
+	nrf_gpio_cfg_output(W5500_CS);
+	nrf_gpio_pin_set(W5500_CS);
+	nrf_gpio_cfg_output(W5500_RST);
+	nrf_gpio_pin_set(W5500_RST);
+
 }
 
 void led_on(void)

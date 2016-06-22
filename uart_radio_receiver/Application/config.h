@@ -79,7 +79,7 @@
 #define PC14				GPIO_Pin_14	//
 #define PC15				GPIO_Pin_15	//
 #endif
-#define WIZ_INT			        PC6	// in
+#define WIZ_INT			        29	// in
 //Port D
 
 //=================================================

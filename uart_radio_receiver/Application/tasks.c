@@ -4,6 +4,7 @@
 #include "dhcp.h"
 #include "config.h"
 #include "sockutil.h"
+#include "radio_config.h"
 
 OS_TID t_net_init;                     /* assigned task id of task: command   */
 
@@ -22,6 +23,7 @@ __task void net_init (void) {
   {
 		
 		uint8 dhcpret=0;
+		os_dly_wait(10);
     dhcpret = check_DHCP_state(SOCK_DHCP);
     switch(dhcpret)
     {
@@ -32,10 +34,26 @@ __task void net_init (void) {
       case DHCP_RET_UPDATE:
         break;
       case DHCP_RET_CONFLICT:
-        while(1);
+        os_dly_wait(10);
       default:
         break;
     }
   }
-  os_tsk_delete_self ();               /* stop init task (no longer needed)  */
+  //os_tsk_delete_self ();               /* stop init task (no longer needed)  */
+}
+
+__task void raido_listen (void) {
+	static unsigned char packet[10];
+	radio_configure();
+	NRF_RADIO->PACKETPTR = (uint32_t)packet; // Set payload pointer
+
+	while(1)
+  {
+		if(app_rx_data() == 1)
+		{
+			os_dly_wait(10);
+		}
+		os_dly_wait(10);
+  }
+  //os_tsk_delete_self ();               /* stop init task (no longer needed)  */
 }
